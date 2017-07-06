@@ -11,7 +11,7 @@ module.exports = (dataLoader) => {
   });
 
   usersController.get('/me', (req, res) => {
-    dataLoader.getUserFromSession(username)
+    dataLoader.getUserFromSession(req.body.username)
     .then(data => res.json({users: data}))
     .catch(err => res.status(400).json(err));
   });
