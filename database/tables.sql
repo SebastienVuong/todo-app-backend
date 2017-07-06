@@ -18,7 +18,8 @@ CREATE TABLE tasks (
   title VARCHAR(50) NOT NULL,
   description VARCHAR(100),
   status VARCHAR(20) NOT NULL,
-  dueDate VARCHAR(20) NOT NULL
+  dueDate VARCHAR(20) NOT NULL,
+  starred BOOLEAN NOT NULL
 );
 
 CREATE TABLE subtasks (
