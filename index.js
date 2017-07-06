@@ -25,8 +25,8 @@ const subtasksController = require('./controllers/subtasks.js');
 
 
 // Database / data loader initialization
-// mysql://j8bdh8u0ny9pgsbs:ounkmyo4zuounho1@hngomrlb3vfq3jcr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/zpb4mn0cwerf1flt
-// const connection = mysql.createPool(process.env.JAWSDB_URL)
+mysql://n2lzyi0pgrj15rpn:to8v88gu1ebxs75l@lg7j30weuqckmw07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/s0u282p429fx0r23
+const connection = mysql.createPool(process.env.DATABASE_URL)
 const connection = mysql.createPool({
   user: 'root',
   database: 'todo_app'
