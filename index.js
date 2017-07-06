@@ -18,6 +18,7 @@ const TodoAppDataLoader = require('./lib/todo-app.js');
 
 // Controllers
 // const authController = require('./controllers/auth.js'); // AUTHENTICATION NOT IMPLEMENTED
+const usersController = require('./controllers/users.js');
 const tasksController = require('./controllers/tasks.js');
 const subtasksController = require('./controllers/subtasks.js');
 
@@ -42,6 +43,7 @@ app.use(bodyParser.json());
 // app.use(checkLoginToken(dataLoader)); // SESSIONS NOT IMPLEMENTED
 
 // app.use('/auth', authController(dataLoader)); // AUTHENTICATION NOT IMPLEMENTED
+app.use('/users', usersController(dataLoader));
 app.use('/tasks', tasksController(dataLoader));
 // app.use('/subtasks', subtasksController(dataLoader)); // VIEWING A SUBTASK IS NOT IMPLEMENTED
 
